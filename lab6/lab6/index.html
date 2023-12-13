@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hà My Food</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">TRANG CHỦ</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">GIỚI THIỆU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">THỰC ĐƠN</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">LIÊN HỆ</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Mở 9 giờ sáng - Đóng 11 giờ tối</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-tag" style="font-size:90px">HM FOOD</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-tag">19T1 khu đô thị Kiến Hưng,Hà Đông,Hà Nội.</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Giới thiệu HM FOOD</span></h5>
+    <p>Chào mừng bạn đến với quán đồ ăn nhanh của chúng tôi! Tại đây, chúng tôi tự hào cung cấp một trải nghiệm ẩm thực nhanh chóng và ngon miệng. Với đa dạng từ bữa trưa nhanh đến các món ăn phổ biến, chúng tôi cam kết đảm bảo sự tươi ngon và chất lượng trong mỗi đợt phục vụ. Hãy ghé thăm chúng tôi để thưởng thức hương vị độc đáo và dễ chịu của các món ăn nhanh tại quán! </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Tận hưởng hương vị tuyệt vời, thời gian phục vụ nhanh chóng - Nơi bạn gặp gỡ hấp dẫn và ẩm thực tuyệt vời!"</i></p>
+    </div>
+    <img src="/lab6/imgas/menu2.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Thời gian:</strong> Mở 9 giờ sáng - Đóng 11 giờ tối.</p>
+    <p><strong>Địa chỉ:</strong> 19T1 khu đô thị Kiến Hưng,Hà Đông,Hà Nội.</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THỰC ĐƠN</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">ĂN</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">UỐNG</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>BÁNH MÌ GÀ NƯỚNG</h5>
+      <p class="w3-text-grey">GIÁ: 55.OOO</p><br>
+    
+      <h5>HAMBURGER GÀ BBQ</h5>
+      <p class="w3-text-grey">GIÁ: 55.000</p><br>
+    
+      <h5>HAMBURGER PHOMAI</h5>
+      <p class="w3-text-grey">GIÁ: 60.000</p><br>
+    
+      <h5>COMBO KHOAI TÂY ĐA DẠNG</h5>
+      <p class="w3-text-grey">GIÁ: 70.000</p><br>
+    
+      <h5>GÀ RÁN SỐT BBQ</h5>
+      <p class="w3-text-grey">GIÁ: 55.000</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>COCA</h5>
+      <p class="w3-text-grey">GIÁ: 20.000</p><br>
+    
+      <h5>NƯỚC ÉP</h5>
+      <p class="w3-text-grey">GIÁ: 35.000</p><br>
+    
+      <h5>SODA</h5>
+      <p class="w3-text-grey">GIÁ: 30.000</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">GIÁ: 20.000</p><br>
+    
+      <h5>PEPSI</h5>
+      <p class="w3-text-grey">GIÁ: 20.000</p>
+    </div>  
+    <img src="/lab6/imgas/menu3.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">BẠN CÓ THỂ TÌM CHÚNG TÔI Ở....</span></h5>
+    <p><strong>Địa chỉ:</strong> 19T1 khu đô thị Kiến Hưng,Hà Đông,Hà Nội.</p>
+    <p><strong>Email:</strong> phm9523@gmail.com</p>
+    <p><strong>SĐT:</strong> 0373101708</p>
+    <p>Rất mong được gặp và phục vụ các bạn.</p>
+    <img src="/lab6/imgas/diachi.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">Xin chào!</span> Chúng tôi cung cấp dịch vụ ăn uống trọn gói cho mọi sự kiện dù lớn hay nhỏ. Chúng tôi hiểu nhu cầu của bạn và chúng tôi sẽ phục vụ các món ăn để đáp ứng các tiêu chí lớn nhất, cả về hình thức lẫn hương vị.</p>
+    <p><strong>Đặt bàn,</strong> yêu cầu món đặc biệt hôm nay hoặc chỉ cần gửi tin nhắn cho chúng tôi:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="TÊN" required name="TÊN"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="BAO NHIÊU NGƯỜI" required name="SỐ NGƯỜI"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="THỜI GIAN" required name="date" value=""></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="TIN NHẮN \ YÊU CẦU ĐẶC BIỆT" required name="TIN NHẮN"></p>
+      <p><button class="w3-button w3-black" type="submit">GỬI</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p> © 2023 HÀ MY FOOD. All rights reserved</p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
